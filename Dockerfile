@@ -1,7 +1,5 @@
-FROM mcr.microsoft.com/dotnet/core/sdk:2.2
+FROM mcr.microsoft.com/dotnet/core/sdk:3.0
 LABEL maintainer "Daniel Bachler <daniel@douglasconnect.com>"
-
-RUN dotnet tool install fake-cli -g
 
 # Add node (for safe stack stuff)
 RUN groupadd --gid 1000 node \
